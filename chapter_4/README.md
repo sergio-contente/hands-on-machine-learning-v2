@@ -101,7 +101,13 @@ $$
 $$
 
 
-One you have the gradient vector, you need to subtract $\nabla_\theta\text{MSE($\theta)$} $ from $\theta$ with the learning rate multiplying it ($\eta$)
+One you have the gradient vector, you need to subtract
+
+$$ 
+\nabla_\theta\text{MSE($\theta)$}
+$$
+
+from $\theta$ with the learning rate multiplying it ($\eta$)
 
 
 $$
