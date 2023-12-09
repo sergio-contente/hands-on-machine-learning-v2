@@ -45,6 +45,7 @@ $$
 ### The Normal Equation
 
 To find the value of $\theta$ that minimizes the cost function, there is a *closed-form* solution.
+
 $$
 \hat{\theta} = (X^TX)^{-1}X^Ty
 $$
@@ -87,6 +88,8 @@ $$
 $$
 
 However, this should take some time. Instead, you can use the gradient vector:
+
+
 $$
 \nabla_\theta\text{MSE($\theta)$}=\begin{bmatrix}
     \frac{\partial}{\partial\theta_0}\text{MSE($\theta)$} \\
@@ -97,7 +100,9 @@ $$
 \\
 $$
 
+
 One you have the gradient vector, you need to subtract $\nabla_\theta\text{MSE($\theta)$} $ from $\theta$ with the learning rate multiplying it ($\eta$)
+
 
 $$
 \theta^{(\textbf{next step})} = \theta - \eta\nabla_\theta\text{MSE($\theta)$}
