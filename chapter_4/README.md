@@ -25,16 +25,22 @@ $$
 - $h_\theta$ is the hypothesis function, using the model parameters $\theta$
 
 Normally, is better to code a 2D array with a single row. However, a vector is actually a 2D array with a single *column*. The way to fix it is to rewrite the equation with the transpose of the parameters matrix:
+
+
 $$
 \hat{y}=\theta^Tx
 $$
 
+
 ## Evaluating the Linear Regression
 
 The Root Mean Square Error (RMSE) is the most common way to measure the performance of a regression model. We need to find the value of $\theta$ that minimizes the RMSE. In practise, it's easier to minimize the Mean Squared Error (MSE) and it leads to the same result.
+
+
 $$
 MSE(X,h_\theta) = \frac{1}{m}\sum_{i=1}^{m}(\theta^Tx^{(i)}-y^{(i)})^2
 $$
+
 
 ### The Normal Equation
 
